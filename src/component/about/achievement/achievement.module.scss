@@ -1,0 +1,39 @@
+.section {
+  padding: px(120) px(240);
+  font-family: $raleway;
+  background-color: white;
+  color: #1c1d20;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: px(124);
+  overflow-y: hidden;
+
+  .image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: px(450);
+      height: px(650);
+      object-fit: cover;
+      transform: translateY(px(-130));
+    }
+  }
+
+  .text {
+    padding-top: px(48);
+    display: flex;
+    flex-direction: column;
+    gap: px(36);
+
+    h2 {
+      font-size: px(48);
+      font-weight: 500;
+    }
+  }
+}

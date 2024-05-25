@@ -1,0 +1,52 @@
+.buttonCircle {
+  position: absolute;
+  right: px(100);
+  bottom: px(-80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f76d6;
+  width: px(180);
+  height: px(180);
+  overflow: hidden;
+  clip-path: circle();
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2961ac;
+    border-radius: 50%;
+    animation: backgroundAnimationReverse 0.5s cubic-bezier(0.33, 0.75, 0.33, 0.75) forwards;
+  }
+  &:hover:before {
+    animation: backgroundAnimation 0.5s cubic-bezier(0.33, 0.75, 0.33, 0.75) forwards;
+  }
+}
+
+.buttonText {
+  font-size: clamp(1rem, 0.2885rem + 1.5385vw, 1.25rem);
+  color: white;
+  user-select: none;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes backgroundAnimationReverse {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

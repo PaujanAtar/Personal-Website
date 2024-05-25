@@ -1,0 +1,29 @@
+// Template.module.scss
+
+.banner {
+  min-height: 100vh;
+  background-color: #1c1d20;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+}
+
+.banner1 {
+  left: 0;
+  width: 25%;
+}
+
+.banner2 {
+  left: 25%;
+  width: 25%;
+}
+
+.banner3 {
+  left: 50%;
+  width: 25%;
+}
+
+.banner4 {
+  left: 75%;
+  width: 25%;
+}

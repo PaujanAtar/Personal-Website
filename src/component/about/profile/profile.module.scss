@@ -1,0 +1,91 @@
+.section {
+  padding: px(160) px(180) px(160) 0;
+  font-family: $raleway;
+  background-color: white;
+  color: #1c1d20;
+}
+
+.header {
+  padding-right: px(100);
+  padding-left: px(230);
+
+  h1 {
+    font-size: px(80);
+    font-weight: 500;
+  }
+
+  .line {
+    position: relative;
+    margin: px(120) 0;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: px(30);
+  overflow-y: hidden;
+  padding-left: px(230);
+
+  .profileText {
+    width: 30%;
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      left: px(-100);
+    }
+  }
+
+  .profileImage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+
+    img {
+      width: px(700);
+      height: px(900);
+      object-fit: cover;
+      transform: translateY(px(-130));
+    }
+  }
+}
+
+.service {
+  padding: px(124) 0 px(124) px(100);
+
+  h2 {
+    font-size: px(60);
+    font-weight: 500;
+    margin-bottom: px(80);
+  }
+
+  .services {
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: px(24);
+
+    .columns {
+      display: flex;
+      flex-direction: column;
+      gap: px(36);
+
+      h6 {
+        color: #9a9a9a;
+        font-size: px(16);
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: px(32);
+      }
+
+      span {
+        margin-right: px(10);
+      }
+    }
+  }
+}

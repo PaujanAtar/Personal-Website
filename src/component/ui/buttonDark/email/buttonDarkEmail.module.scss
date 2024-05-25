@@ -1,0 +1,50 @@
+.buttonEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1d20;
+  border: px(1) solid white;
+  border-radius: px(100);
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 50;
+    left: 50;
+    width: 200%;
+    height: 200%;
+    background-color: #2f76d6;
+    border-radius: 50%;
+    animation: backgroundAnimationReverse 1s cubic-bezier(0.33, 0.75, 0.33, 0.75) forwards;
+  }
+  &:hover:before {
+    animation: backgroundAnimation 1s cubic-bezier(0.33, 0.75, 0.33, 0.75) forwards;
+  }
+}
+
+.buttonText {
+  font-size: clamp(1rem, 0.2885rem + 1.5385vw, 1.25rem);
+  color: white;
+  user-select: none;
+  padding: px(24) px(36);
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes backgroundAnimationReverse {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

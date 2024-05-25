@@ -1,0 +1,14 @@
+.section {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 99;
+  margin: px(48) px(24);
+  width: 95vw;
+
+  .page {
+    display: flex;
+    gap: px(20);
+  }
+}

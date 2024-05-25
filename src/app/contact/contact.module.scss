@@ -1,0 +1,112 @@
+.section {
+  padding: px(160) px(230);
+  font-family: $raleway;
+  background-color: #1c1d20;
+  color: white;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: px(120);
+
+  .form {
+    h1 {
+      font-size: px(80);
+      margin-bottom: px(160);
+      font-weight: 500;
+    }
+
+    .formContainer {
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: px(12);
+        padding: px(48) 0;
+        border-bottom: px(0.1) solid rgba(255, 255, 255, 0.2);
+
+        label {
+          font-size: px(24);
+          font-weight: 600;
+          padding: 0 px(12);
+        }
+
+        input {
+          padding: px(12);
+          background: transparent;
+          border: none;
+          font-size: px(24);
+        }
+        input:focus {
+          outline: none;
+        }
+
+        &:first-child {
+          border-top: px(0.1) solid rgba(255, 255, 255, 0.2);
+        }
+        &:nth-child(5) {
+          border-bottom: none;
+        }
+      }
+
+      .line {
+        position: relative;
+        margin: px(180) 0;
+
+        hr {
+          border: px(0.1) solid rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: px(48);
+  padding-top: px(100);
+
+  h1 {
+    font-weight: 450;
+    font-style: normal;
+    font-size: px(12);
+    line-height: 1.065;
+    margin-bottom: px(12);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.5;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: normal;
+  }
+
+  .image {
+    width: px(115);
+    height: px(115);
+    padding: px(12);
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  .arrow {
+    margin: px(50) 0 px(10) px(5);
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      cursor: pointer;
+    }
+  }
+}

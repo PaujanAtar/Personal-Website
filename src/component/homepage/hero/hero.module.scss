@@ -1,0 +1,117 @@
+.section {
+  font-family: $raleway;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c1c4be;
+  position: relative;
+  overflow: hidden;
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    img {
+      width: px(1000);
+      height: px(1500);
+      object-fit: cover;
+      transform: translateY(px(-230));
+    }
+  }
+
+  .image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    pointer-events: none;
+  }
+
+  .runningText {
+    position: absolute;
+    bottom: px(30);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: px(230);
+    overflow-x: hidden;
+    text-wrap: nowrap;
+  }
+
+  .title {
+    position: absolute;
+    bottom: px(350);
+    left: px(100);
+    font-size: px(40);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: px(50);
+  }
+  .globeContainer {
+    background-color: #1c1d20;
+    position: absolute;
+    bottom: px(350);
+    right: 0;
+    border-radius: px(100) 0 0 px(100);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .globeAnimation {
+      background: #b7bab4;
+      border-radius: 100px;
+      border: px(12) solid #1c1d20;
+      margin-right: px(10);
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .globeText {
+      padding-right: px(48);
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+
+.portfolio {
+  padding: px(120) px(210) 0 px(210);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  gap: px(72);
+
+  .paragraph1 {
+    width: 70%;
+    font-size: px(40);
+  }
+
+  .paragraph2 {
+    width: 30%;
+  }
+}
+
+.line {
+  position: relative;
+  margin: px(60) 0;
+  width: 70%;
+  z-index: 100;
+}

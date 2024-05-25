@@ -1,0 +1,25 @@
+.buttonCircle {
+  padding: 0;
+  border: none;
+  background: none;
+  position: absolute;
+  right: px(70);
+  bottom: px(-90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: px(30) solid #2f76d6;
+  border-radius: 100%;
+  width: px(180);
+  height: px(180);
+  overflow: hidden;
+  clip-path: circle();
+}
+
+.globeAnimation {
+  img {
+    object-fit: cover;
+    width: px(200);
+  }
+}

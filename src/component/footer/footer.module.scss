@@ -1,0 +1,96 @@
+.section {
+  height: 100vh;
+  background-color: #1c1d20;
+  font-family: $raleway;
+}
+
+.sectionNone {
+  display: none;
+}
+
+.content {
+  padding: px(95) px(210);
+
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      font-size: px(80);
+      color: white;
+
+      .image {
+        width: px(115);
+        height: px(115);
+        padding: px(18);
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+    }
+
+    .text :nth-child(1) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        padding: 0;
+      }
+    }
+
+    .text :nth-child(2) {
+      padding-left: px(20);
+    }
+
+    .arrow {
+      transform: rotate(90deg);
+      padding: px(10);
+    }
+  }
+
+  .line {
+    position: relative;
+    margin: px(60) 0;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: px(24);
+
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      width: px(340);
+      height: px(70);
+      overflow: hidden;
+    }
+
+    button {
+      background-color: transparent;
+      color: white;
+      padding: px(24) px(36);
+      border: px(1) solid white;
+      border-radius: px(100);
+      letter-spacing: px(4);
+      font-family: $raleway;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+  }
+}
